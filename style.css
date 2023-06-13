@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: League Spartan, sans-serif;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .player-container {
@@ -50,6 +50,58 @@ h3 {
   text-align: center;
   font-weight: 400;
   margin: 5px 0 0;
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background: #242323;
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 66%;
+  transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+.fa-solid {
+  font-size: 30px;
+  color: rgb(129, 129, 129);
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa-solid:hover {
+  filter: brightness(80%);
+}
+
+.main-button {
+  font-size: 45px;
+  position: relative;
+  top: 3px;
 }
 
 @media screen and (max-width: 376px) {
